@@ -144,15 +144,11 @@ Remove the `@import '~antd/dist/antd.css';` statement added before because `babe
 + import { Button } from 'antd';
   import './App.css';
 
-  class App extends Component {
-    render() {
-      return (
-        <div className="App">
-          <Button type="primary">Button</Button>
-        </div>
-      );
-    }
-  }
+  const App: React.FC<{}> = () => (
+    <div className="App">
+      <Button type="primary">Button</Button>
+    </div>
+  );
 
   export default App;
 ```
@@ -161,7 +157,7 @@ Then reboot with `yarn start` and visit the demo page, you should not find any [
 
 ### Customize Theme
 
-According to the [Customize Theme documentation](/docs/react/customize-theme), to customize the theme, we need to modify `less` variables with tools such as [less-loader](https://github.com/webpack/less-loader). We can also use [addLessLoader](https://github.com/arackaf/customize-cra#addlessloaderloaderoptions) to achieve this. Import it and modify `config-overrides.js` like below.
+According to the [Customize Theme documentation](/docs/react/customize-theme), to customize the theme, we need to modify `less` variables with tools such as [less-loader](https://github.com/webpack/less-loader). We can also use [addLessLoader](https://github.com/arackaf/customize-cra/blob/master/api.md#addlessloaderloaderoptions) to achieve this. Import it and modify `config-overrides.js` like below.
 
 ```bash
 $ yarn add less less-loader
@@ -191,7 +187,7 @@ We use `modifyVars` option of [less-loader](https://github.com/webpack/less-load
 
 ## Alternative ways
 
-You can also follow instructions in [Use in create-react-app](/docs/react/use-with-create-react-app.en-US.md), then use to setup the TypeScript development environment by yourself.
+You can also follow instructions in [Use in create-react-app](/docs/react/use-with-create-react-app), then use to setup the TypeScript development environment by yourself.
 
 And you can use [react-scripts-ts-antd](https://www.npmjs.com/package/react-scripts-ts-antd) which includes ts-import-plugin, react-app-rewired, scss, less and etc. You can create a new project that without any configurations by running just one command.
 

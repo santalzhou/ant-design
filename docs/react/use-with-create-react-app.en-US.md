@@ -84,7 +84,7 @@ Add `antd/dist/antd.css` at the top of `src/App.css`.
 ...
 ```
 
-Ok, you should now see a blue primary button displayed on the page. Next you can choose any components of `antd` to develop your application. Visit other workflows of `create-react-app` at its [User Guide](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+Ok, you should now see a blue primary button displayed on the page. Next you can choose any components of `antd` to develop your application. Visit other workflows of `create-react-app` at its [User Guide](https://github.com/facebook/create-react-app/blob/master/packages/cra-template/template/README.md).
 
 We are successfully running antd components now, go build your own application!
 
@@ -96,8 +96,10 @@ Now we need to customize the default webpack config. We can achieve that by usin
 
 Import react-app-rewired and modify the `scripts` field in package.json. Due to new [react-app-rewired@2.x](https://github.com/timarney/react-app-rewired#alternatives) issue, you shall need [customize-cra](https://github.com/arackaf/customize-cra) along with react-app-rewired.
 
-```
+```bash
 $ yarn add react-app-rewired customize-cra
+# use less-loader@6.0.0
+$ yarn add react-app-rewired customize-cra@next
 ```
 
 ```diff
@@ -155,15 +157,11 @@ Remove the `@import '~antd/dist/antd.css';` statement added before because `babe
 + import { Button } from 'antd';
   import './App.css';
 
-  class App extends Component {
-    render() {
-      return (
-        <div className="App">
-          <Button type="primary">Button</Button>
-        </div>
-      );
-    }
-  }
+  const App = () => (
+    <div className="App">
+      <Button type="primary">Button</Button>
+    </div>
+  );
 
   export default App;
 ```
@@ -172,7 +170,7 @@ Then reboot with `yarn start` and visit the demo page, you should not find any [
 
 ### Customize Theme
 
-According to the [Customize Theme documentation](/docs/react/customize-theme), to customize the theme, we need to modify `less` variables with tools such as [less-loader](https://github.com/webpack/less-loader). We can also use [addLessLoader](https://github.com/arackaf/customize-cra#addlessloaderloaderoptions) to achieve this. Import it and modify `config-overrides.js` like below.
+According to the [Customize Theme documentation](/docs/react/customize-theme), to customize the theme, we need to modify `less` variables with tools such as [less-loader](https://github.com/webpack/less-loader). We can also use [addLessLoader](https://github.com/arackaf/customize-cra/blob/master/api.md#addlessloaderloaderoptions) to achieve this. Import it and modify `config-overrides.js` like below.
 
 ```bash
 $ yarn add less less-loader
