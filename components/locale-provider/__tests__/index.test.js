@@ -174,7 +174,7 @@ describe('Locale Provider', () => {
   ));
 
   beforeAll(() => {
-    MockDate.set(moment('2017-09-18T03:30:07.795'));
+    MockDate.set(moment('2017-09-18T03:30:07.795').valueOf());
   });
 
   afterAll(() => {
@@ -220,7 +220,7 @@ describe('Locale Provider', () => {
         '.ant-btn:not(.ant-btn-primary) span',
       )[0].innerHTML;
       let okButtonText = currentConfirmNode.querySelectorAll('.ant-btn-primary span')[0].innerHTML;
-      if (locale.locale === 'zh-cn') {
+      if (locale.locale.indexOf('zh-') === 0) {
         cancelButtonText = cancelButtonText.replace(' ', '');
         okButtonText = okButtonText.replace(' ', '');
       }

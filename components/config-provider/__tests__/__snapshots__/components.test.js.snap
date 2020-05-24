@@ -1788,6 +1788,7 @@ exports[`ConfigProvider components Calendar configProvider 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -1845,6 +1846,7 @@ exports[`ConfigProvider components Calendar configProvider 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -2723,6 +2725,7 @@ exports[`ConfigProvider components Calendar configProvider 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -3067,6 +3070,7 @@ exports[`ConfigProvider components Calendar configProvider componentSize large 1
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -3124,6 +3128,7 @@ exports[`ConfigProvider components Calendar configProvider componentSize large 1
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -4002,6 +4007,7 @@ exports[`ConfigProvider components Calendar configProvider componentSize large 1
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -4346,6 +4352,7 @@ exports[`ConfigProvider components Calendar configProvider componentSize middle 
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -4403,6 +4410,7 @@ exports[`ConfigProvider components Calendar configProvider componentSize middle 
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -5281,6 +5289,7 @@ exports[`ConfigProvider components Calendar configProvider componentSize middle 
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -5625,6 +5634,7 @@ exports[`ConfigProvider components Calendar normal 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -5682,6 +5692,7 @@ exports[`ConfigProvider components Calendar normal 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -6560,6 +6571,7 @@ exports[`ConfigProvider components Calendar normal 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -6904,6 +6916,7 @@ exports[`ConfigProvider components Calendar prefixCls 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -6961,6 +6974,7 @@ exports[`ConfigProvider components Calendar prefixCls 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -7839,6 +7853,7 @@ exports[`ConfigProvider components Calendar prefixCls 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -9418,9 +9433,6 @@ exports[`ConfigProvider components Comment configProvider 1`] = `
     class="config-comment-inner"
   >
     <div
-      class="config-comment-avatar"
-    />
-    <div
       class="config-comment-content"
     >
       <div
@@ -9442,9 +9454,6 @@ exports[`ConfigProvider components Comment configProvider 1`] = `
       <div
         class="config-comment-inner"
       >
-        <div
-          class="config-comment-avatar"
-        />
         <div
           class="config-comment-content"
         >
@@ -9471,9 +9480,6 @@ exports[`ConfigProvider components Comment configProvider componentSize large 1`
     class="config-comment-inner"
   >
     <div
-      class="config-comment-avatar"
-    />
-    <div
       class="config-comment-content"
     >
       <div
@@ -9495,9 +9501,6 @@ exports[`ConfigProvider components Comment configProvider componentSize large 1`
       <div
         class="config-comment-inner"
       >
-        <div
-          class="config-comment-avatar"
-        />
         <div
           class="config-comment-content"
         >
@@ -9524,9 +9527,6 @@ exports[`ConfigProvider components Comment configProvider componentSize middle 1
     class="config-comment-inner"
   >
     <div
-      class="config-comment-avatar"
-    />
-    <div
       class="config-comment-content"
     >
       <div
@@ -9548,9 +9548,6 @@ exports[`ConfigProvider components Comment configProvider componentSize middle 1
       <div
         class="config-comment-inner"
       >
-        <div
-          class="config-comment-avatar"
-        />
         <div
           class="config-comment-content"
         >
@@ -9577,9 +9574,6 @@ exports[`ConfigProvider components Comment normal 1`] = `
     class="ant-comment-inner"
   >
     <div
-      class="ant-comment-avatar"
-    />
-    <div
       class="ant-comment-content"
     >
       <div
@@ -9601,9 +9595,6 @@ exports[`ConfigProvider components Comment normal 1`] = `
       <div
         class="ant-comment-inner"
       >
-        <div
-          class="ant-comment-avatar"
-        />
         <div
           class="ant-comment-content"
         >
@@ -9630,9 +9621,6 @@ exports[`ConfigProvider components Comment prefixCls 1`] = `
     class="prefix-Comment-inner"
   >
     <div
-      class="prefix-Comment-avatar"
-    />
-    <div
       class="prefix-Comment-content"
     >
       <div
@@ -9654,9 +9642,6 @@ exports[`ConfigProvider components Comment prefixCls 1`] = `
       <div
         class="prefix-Comment-inner"
       >
-        <div
-          class="prefix-Comment-avatar"
-        />
         <div
           class="prefix-Comment-content"
         >
@@ -9684,6 +9669,7 @@ exports[`ConfigProvider components DatePicker DatePicker configProvider 1`] = `
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select date"
         readonly=""
         size="12"
@@ -9728,6 +9714,7 @@ exports[`ConfigProvider components DatePicker DatePicker configProvider componen
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select date"
         readonly=""
         size="12"
@@ -9772,6 +9759,7 @@ exports[`ConfigProvider components DatePicker DatePicker configProvider componen
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select date"
         readonly=""
         size="12"
@@ -9816,6 +9804,7 @@ exports[`ConfigProvider components DatePicker DatePicker normal 1`] = `
       class="ant-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select date"
         readonly=""
         size="12"
@@ -9860,6 +9849,7 @@ exports[`ConfigProvider components DatePicker DatePicker prefixCls 1`] = `
       class="prefix-DatePicker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select date"
         readonly=""
         size="12"
@@ -9904,6 +9894,7 @@ exports[`ConfigProvider components DatePicker MonthPicker configProvider 1`] = `
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select month"
         readonly=""
         size="12"
@@ -9948,6 +9939,7 @@ exports[`ConfigProvider components DatePicker MonthPicker configProvider compone
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select month"
         readonly=""
         size="12"
@@ -9992,6 +9984,7 @@ exports[`ConfigProvider components DatePicker MonthPicker configProvider compone
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select month"
         readonly=""
         size="12"
@@ -10036,6 +10029,7 @@ exports[`ConfigProvider components DatePicker MonthPicker normal 1`] = `
       class="ant-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select month"
         readonly=""
         size="12"
@@ -10080,6 +10074,7 @@ exports[`ConfigProvider components DatePicker MonthPicker prefixCls 1`] = `
       class="prefix-MonthPicker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select month"
         readonly=""
         size="12"
@@ -10124,6 +10119,7 @@ exports[`ConfigProvider components DatePicker RangePicker configProvider 1`] = `
       class="config-picker-input config-picker-input-active"
     >
       <input
+        autocomplete="off"
         placeholder="Start date"
         readonly=""
         size="12"
@@ -10163,6 +10159,7 @@ exports[`ConfigProvider components DatePicker RangePicker configProvider 1`] = `
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="End date"
         readonly=""
         size="12"
@@ -10210,6 +10207,7 @@ exports[`ConfigProvider components DatePicker RangePicker configProvider compone
       class="config-picker-input config-picker-input-active"
     >
       <input
+        autocomplete="off"
         placeholder="Start date"
         readonly=""
         size="12"
@@ -10249,6 +10247,7 @@ exports[`ConfigProvider components DatePicker RangePicker configProvider compone
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="End date"
         readonly=""
         size="12"
@@ -10296,6 +10295,7 @@ exports[`ConfigProvider components DatePicker RangePicker configProvider compone
       class="config-picker-input config-picker-input-active"
     >
       <input
+        autocomplete="off"
         placeholder="Start date"
         readonly=""
         size="12"
@@ -10335,6 +10335,7 @@ exports[`ConfigProvider components DatePicker RangePicker configProvider compone
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="End date"
         readonly=""
         size="12"
@@ -10382,6 +10383,7 @@ exports[`ConfigProvider components DatePicker RangePicker normal 1`] = `
       class="ant-picker-input ant-picker-input-active"
     >
       <input
+        autocomplete="off"
         placeholder="Start date"
         readonly=""
         size="12"
@@ -10421,6 +10423,7 @@ exports[`ConfigProvider components DatePicker RangePicker normal 1`] = `
       class="ant-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="End date"
         readonly=""
         size="12"
@@ -10468,6 +10471,7 @@ exports[`ConfigProvider components DatePicker RangePicker prefixCls 1`] = `
       class="prefix-RangePicker-input prefix-RangePicker-input-active"
     >
       <input
+        autocomplete="off"
         placeholder="Start date"
         readonly=""
         size="12"
@@ -10507,6 +10511,7 @@ exports[`ConfigProvider components DatePicker RangePicker prefixCls 1`] = `
       class="prefix-RangePicker-input"
     >
       <input
+        autocomplete="off"
         placeholder="End date"
         readonly=""
         size="12"
@@ -10554,6 +10559,7 @@ exports[`ConfigProvider components DatePicker WeekPicker configProvider 1`] = `
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select week"
         readonly=""
         size="12"
@@ -10598,6 +10604,7 @@ exports[`ConfigProvider components DatePicker WeekPicker configProvider componen
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select week"
         readonly=""
         size="12"
@@ -10642,6 +10649,7 @@ exports[`ConfigProvider components DatePicker WeekPicker configProvider componen
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select week"
         readonly=""
         size="12"
@@ -10686,6 +10694,7 @@ exports[`ConfigProvider components DatePicker WeekPicker normal 1`] = `
       class="ant-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select week"
         readonly=""
         size="12"
@@ -10730,6 +10739,7 @@ exports[`ConfigProvider components DatePicker WeekPicker prefixCls 1`] = `
       class="prefix-WeekPicker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select week"
         readonly=""
         size="12"
@@ -11118,7 +11128,7 @@ exports[`ConfigProvider components Dropdown configProvider 1`] = `
     </span>
   </button>
   <button
-    class="config-btn config-dropdown-trigger config-btn-default"
+    class="config-btn config-dropdown-trigger config-btn-default config-btn-icon-only"
     type="button"
   >
     <span
@@ -11158,7 +11168,7 @@ exports[`ConfigProvider components Dropdown configProvider componentSize large 1
     </span>
   </button>
   <button
-    class="config-btn config-dropdown-trigger config-btn-default config-btn-lg"
+    class="config-btn config-dropdown-trigger config-btn-default config-btn-lg config-btn-icon-only"
     type="button"
   >
     <span
@@ -11198,7 +11208,7 @@ exports[`ConfigProvider components Dropdown configProvider componentSize middle 
     </span>
   </button>
   <button
-    class="config-btn config-dropdown-trigger config-btn-default"
+    class="config-btn config-dropdown-trigger config-btn-default config-btn-icon-only"
     type="button"
   >
     <span
@@ -11238,7 +11248,7 @@ exports[`ConfigProvider components Dropdown normal 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-dropdown-trigger ant-btn-default"
+    class="ant-btn ant-dropdown-trigger ant-btn-default ant-btn-icon-only"
     type="button"
   >
     <span
@@ -11278,7 +11288,7 @@ exports[`ConfigProvider components Dropdown prefixCls 1`] = `
     </span>
   </button>
   <button
-    class="ant-btn ant-dropdown-trigger ant-btn-default"
+    class="ant-btn ant-dropdown-trigger ant-btn-default ant-btn-icon-only"
     type="button"
   >
     <span
@@ -13474,24 +13484,22 @@ exports[`ConfigProvider components Modal configProvider 1`] = `
           <div
             class="config-modal-footer"
           >
-            <div>
-              <button
-                class="config-btn"
-                type="button"
-              >
-                <span>
-                  Cancel
-                </span>
-              </button>
-              <button
-                class="config-btn config-btn-primary"
-                type="button"
-              >
-                <span>
-                  OK
-                </span>
-              </button>
-            </div>
+            <button
+              class="config-btn"
+              type="button"
+            >
+              <span>
+                Cancel
+              </span>
+            </button>
+            <button
+              class="config-btn config-btn-primary"
+              type="button"
+            >
+              <span>
+                OK
+              </span>
+            </button>
           </div>
         </div>
         <div
@@ -13569,24 +13577,22 @@ exports[`ConfigProvider components Modal configProvider componentSize large 1`] 
           <div
             class="config-modal-footer"
           >
-            <div>
-              <button
-                class="config-btn config-btn-lg"
-                type="button"
-              >
-                <span>
-                  Cancel
-                </span>
-              </button>
-              <button
-                class="config-btn config-btn-primary config-btn-lg"
-                type="button"
-              >
-                <span>
-                  OK
-                </span>
-              </button>
-            </div>
+            <button
+              class="config-btn config-btn-lg"
+              type="button"
+            >
+              <span>
+                Cancel
+              </span>
+            </button>
+            <button
+              class="config-btn config-btn-primary config-btn-lg"
+              type="button"
+            >
+              <span>
+                OK
+              </span>
+            </button>
           </div>
         </div>
         <div
@@ -13664,24 +13670,22 @@ exports[`ConfigProvider components Modal configProvider componentSize middle 1`]
           <div
             class="config-modal-footer"
           >
-            <div>
-              <button
-                class="config-btn"
-                type="button"
-              >
-                <span>
-                  Cancel
-                </span>
-              </button>
-              <button
-                class="config-btn config-btn-primary"
-                type="button"
-              >
-                <span>
-                  OK
-                </span>
-              </button>
-            </div>
+            <button
+              class="config-btn"
+              type="button"
+            >
+              <span>
+                Cancel
+              </span>
+            </button>
+            <button
+              class="config-btn config-btn-primary"
+              type="button"
+            >
+              <span>
+                OK
+              </span>
+            </button>
           </div>
         </div>
         <div
@@ -13759,24 +13763,22 @@ exports[`ConfigProvider components Modal normal 1`] = `
           <div
             class="ant-modal-footer"
           >
-            <div>
-              <button
-                class="ant-btn"
-                type="button"
-              >
-                <span>
-                  Cancel
-                </span>
-              </button>
-              <button
-                class="ant-btn ant-btn-primary"
-                type="button"
-              >
-                <span>
-                  OK
-                </span>
-              </button>
-            </div>
+            <button
+              class="ant-btn"
+              type="button"
+            >
+              <span>
+                Cancel
+              </span>
+            </button>
+            <button
+              class="ant-btn ant-btn-primary"
+              type="button"
+            >
+              <span>
+                OK
+              </span>
+            </button>
           </div>
         </div>
         <div
@@ -13854,24 +13856,22 @@ exports[`ConfigProvider components Modal prefixCls 1`] = `
           <div
             class="prefix-Modal-footer"
           >
-            <div>
-              <button
-                class="ant-btn"
-                type="button"
-              >
-                <span>
-                  Cancel
-                </span>
-              </button>
-              <button
-                class="ant-btn ant-btn-primary"
-                type="button"
-              >
-                <span>
-                  OK
-                </span>
-              </button>
-            </div>
+            <button
+              class="ant-btn"
+              type="button"
+            >
+              <span>
+                Cancel
+              </span>
+            </button>
+            <button
+              class="ant-btn ant-btn-primary"
+              type="button"
+            >
+              <span>
+                OK
+              </span>
+            </button>
           </div>
         </div>
         <div
@@ -14100,6 +14100,7 @@ exports[`ConfigProvider components Pagination configProvider 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -14246,6 +14247,7 @@ exports[`ConfigProvider components Pagination configProvider 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -14397,6 +14399,7 @@ exports[`ConfigProvider components Pagination configProvider componentSize large
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -14543,6 +14546,7 @@ exports[`ConfigProvider components Pagination configProvider componentSize large
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -14694,6 +14698,7 @@ exports[`ConfigProvider components Pagination configProvider componentSize middl
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -14840,6 +14845,7 @@ exports[`ConfigProvider components Pagination configProvider componentSize middl
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -14991,6 +14997,7 @@ exports[`ConfigProvider components Pagination normal 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -15137,6 +15144,7 @@ exports[`ConfigProvider components Pagination normal 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -15288,6 +15296,7 @@ exports[`ConfigProvider components Pagination prefixCls 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -15434,6 +15443,7 @@ exports[`ConfigProvider components Pagination prefixCls 1`] = `
               readonly=""
               role="combobox"
               style="opacity:0"
+              unselectable="on"
               value=""
             />
           </span>
@@ -17992,6 +18002,7 @@ exports[`ConfigProvider components Select configProvider 1`] = `
         readonly=""
         role="combobox"
         style="opacity:0"
+        unselectable="on"
         value=""
       />
     </span>
@@ -18016,6 +18027,7 @@ exports[`ConfigProvider components Select configProvider 1`] = `
             role="option"
           />
           <div
+            aria-label="Light"
             aria-selected="false"
             id="undefined_list_1"
             role="option"
@@ -18111,6 +18123,7 @@ exports[`ConfigProvider components Select configProvider componentSize large 1`]
         readonly=""
         role="combobox"
         style="opacity:0"
+        unselectable="on"
         value=""
       />
     </span>
@@ -18135,6 +18148,7 @@ exports[`ConfigProvider components Select configProvider componentSize large 1`]
             role="option"
           />
           <div
+            aria-label="Light"
             aria-selected="false"
             id="undefined_list_1"
             role="option"
@@ -18230,6 +18244,7 @@ exports[`ConfigProvider components Select configProvider componentSize middle 1`
         readonly=""
         role="combobox"
         style="opacity:0"
+        unselectable="on"
         value=""
       />
     </span>
@@ -18254,6 +18269,7 @@ exports[`ConfigProvider components Select configProvider componentSize middle 1`
             role="option"
           />
           <div
+            aria-label="Light"
             aria-selected="false"
             id="undefined_list_1"
             role="option"
@@ -18349,6 +18365,7 @@ exports[`ConfigProvider components Select normal 1`] = `
         readonly=""
         role="combobox"
         style="opacity:0"
+        unselectable="on"
         value=""
       />
     </span>
@@ -18373,6 +18390,7 @@ exports[`ConfigProvider components Select normal 1`] = `
             role="option"
           />
           <div
+            aria-label="Light"
             aria-selected="false"
             id="undefined_list_1"
             role="option"
@@ -18468,6 +18486,7 @@ exports[`ConfigProvider components Select prefixCls 1`] = `
         readonly=""
         role="combobox"
         style="opacity:0"
+        unselectable="on"
         value=""
       />
     </span>
@@ -18492,6 +18511,7 @@ exports[`ConfigProvider components Select prefixCls 1`] = `
             role="option"
           />
           <div
+            aria-label="Light"
             aria-selected="false"
             id="undefined_list_1"
             role="option"
@@ -19382,6 +19402,9 @@ exports[`ConfigProvider components Switch configProvider 1`] = `
   role="switch"
   type="button"
 >
+  <div
+    class="config-switch-handle"
+  />
   <span
     class="config-switch-inner"
   />
@@ -19395,6 +19418,9 @@ exports[`ConfigProvider components Switch configProvider componentSize large 1`]
   role="switch"
   type="button"
 >
+  <div
+    class="config-switch-handle"
+  />
   <span
     class="config-switch-inner"
   />
@@ -19408,6 +19434,9 @@ exports[`ConfigProvider components Switch configProvider componentSize middle 1`
   role="switch"
   type="button"
 >
+  <div
+    class="config-switch-handle"
+  />
   <span
     class="config-switch-inner"
   />
@@ -19421,6 +19450,9 @@ exports[`ConfigProvider components Switch normal 1`] = `
   role="switch"
   type="button"
 >
+  <div
+    class="ant-switch-handle"
+  />
   <span
     class="ant-switch-inner"
   />
@@ -19434,6 +19466,9 @@ exports[`ConfigProvider components Switch prefixCls 1`] = `
   role="switch"
   type="button"
 >
+  <div
+    class="prefix-Switch-handle"
+  />
   <span
     class="prefix-Switch-inner"
   />
@@ -19451,7 +19486,7 @@ exports[`ConfigProvider components Table configProvider 1`] = `
       class="config-spin-container"
     >
       <div
-        class="config-table"
+        class="config-table config-table-empty"
       >
         <div
           class="config-table-container"
@@ -19725,7 +19760,7 @@ exports[`ConfigProvider components Table configProvider componentSize large 1`] 
       class="config-spin-container"
     >
       <div
-        class="config-table"
+        class="config-table config-table-empty"
       >
         <div
           class="config-table-container"
@@ -19999,7 +20034,7 @@ exports[`ConfigProvider components Table configProvider componentSize middle 1`]
       class="config-spin-container"
     >
       <div
-        class="config-table config-table-middle"
+        class="config-table config-table-middle config-table-empty"
       >
         <div
           class="config-table-container"
@@ -20273,7 +20308,7 @@ exports[`ConfigProvider components Table normal 1`] = `
       class="ant-spin-container"
     >
       <div
-        class="ant-table"
+        class="ant-table ant-table-empty"
       >
         <div
           class="ant-table-container"
@@ -20547,7 +20582,7 @@ exports[`ConfigProvider components Table prefixCls 1`] = `
       class="ant-spin-container"
     >
       <div
-        class="prefix-Table"
+        class="prefix-Table prefix-Table-empty"
       >
         <div
           class="prefix-Table-container"
@@ -21469,6 +21504,7 @@ Array [
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select time"
         readonly=""
         size="10"
@@ -22880,6 +22916,7 @@ Array [
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select time"
         readonly=""
         size="10"
@@ -24291,6 +24328,7 @@ Array [
       class="config-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select time"
         readonly=""
         size="10"
@@ -25702,6 +25740,7 @@ Array [
       class="ant-picker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select time"
         readonly=""
         size="10"
@@ -27113,6 +27152,7 @@ Array [
       class="prefix-TimePicker-input"
     >
       <input
+        autocomplete="off"
         placeholder="Select time"
         readonly=""
         size="10"
@@ -30537,6 +30577,7 @@ exports[`ConfigProvider components TreeSelect configProvider 1`] = `
         readonly=""
         role="combobox"
         style="opacity:0"
+        unselectable="on"
         value=""
       />
     </span>
@@ -30649,6 +30690,7 @@ exports[`ConfigProvider components TreeSelect configProvider componentSize large
         readonly=""
         role="combobox"
         style="opacity:0"
+        unselectable="on"
         value=""
       />
     </span>
@@ -30761,6 +30803,7 @@ exports[`ConfigProvider components TreeSelect configProvider componentSize middl
         readonly=""
         role="combobox"
         style="opacity:0"
+        unselectable="on"
         value=""
       />
     </span>
@@ -30873,6 +30916,7 @@ exports[`ConfigProvider components TreeSelect normal 1`] = `
         readonly=""
         role="combobox"
         style="opacity:0"
+        unselectable="on"
         value=""
       />
     </span>
@@ -30985,6 +31029,7 @@ exports[`ConfigProvider components TreeSelect prefixCls 1`] = `
         readonly=""
         role="combobox"
         style="opacity:0"
+        unselectable="on"
         value=""
       />
     </span>

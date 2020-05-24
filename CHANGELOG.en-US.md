@@ -15,6 +15,105 @@ timeline: true
 
 ---
 
+## 4.2.4
+
+`2020-05-18`
+
+- 🐞 Revert Switch patch to fix handle position style issue with `unCheckedChildren`. [#24242](https://github.com/ant-design/ant-design/pull/24242)
+- 💄 Adjust Upload icon default color to red in error status. [#24160](https://github.com/ant-design/ant-design/pull/24160)
+- 💄 Adjust Dropdown arrow position a little higher. [#24215](https://github.com/ant-design/ant-design/pull/24215)
+- 🌐 Form `defaultValidateMessages` support `ru_RU`. [#24219](https://github.com/ant-design/ant-design/pull/24219) [@aivinog1](https://github.com/aivinog1)
+
+## 4.2.3
+
+`2020-05-16`
+
+- 🐞 Refactor `rc-progress` to resolve `h3g is not defined` error in `<script src="antd.min.js" />`. [#24127](https://github.com/ant-design/ant-design/pull/24127)
+- 📖 Rewrote [Use in create-react-app](https://ant.design/docs/react/use-with-create-react-app). [#24184](https://github.com/ant-design/ant-design/pull/24184)
+- Drawer
+  - 🐞 Fix Drawer `getContainer={false}` height overflow issue. [#24082](https://github.com/ant-design/ant-design/pull/24082)
+  - 🐞 Fix Drawer `mask={false}` animation not working. [#24082](https://github.com/ant-design/ant-design/pull/24082)
+- BackTop
+  - 🛠 Refactor BackTop with hooks. [#23575](https://github.com/ant-design/ant-design/pull/23575)
+  - 🐞 Fix BackTop not working in iframe of Chrome. [#24194](https://github.com/ant-design/ant-design/pull/24194)
+- DatePicker
+  - 🐞 Fix DatePicker with `showToday` not working with `disabledDate`. [#24190](https://github.com/ant-design/ant-design/pull/24190)
+  - 🐞 Fix DatePicker `renderExtraFooter` with long content exceed content width. [#24145](https://github.com/ant-design/ant-design/pull/24145)
+- Button
+  - 🐞 Fix small Button align issue when customize theme. [#24097](https://github.com/ant-design/ant-design/pull/24097)
+  - 🐞 Fix Button children not working with Tooltip. [#24095](https://github.com/ant-design/ant-design/pull/24095)
+- 🛠 Refactor Tooltip with hooks. [#23699](https://github.com/ant-design/ant-design/pull/23699)
+- 🐞 Avoid `disabled` Upload.Dragger being triggered by clicking Form `label`. [#24202](https://github.com/ant-design/ant-design/pull/24202)
+- 🐞 Fix Select selected option not interactive (such as `title` not working). [#24170](https://github.com/ant-design/ant-design/pull/24170)
+- 🐞 Fix Switch shake in Safari and iOS Chrome. [#24122](https://github.com/ant-design/ant-design/pull/24122) [@lexlexa](https://github.com/lexlexa)
+- 🐞 Carousel upgrade to `react-slick@0.26.1` to resolve some problems. [#24067](https://github.com/ant-design/ant-design/pull/24067)
+- 🐞 Cascader will display `defaultValue` instead of empty string when no matched options. [#24058](https://github.com/ant-design/ant-design/pull/24058) [@Kermit-Xuan](https://github.com/Kermit-Xuan)
+- 🌎 Improve `zh_TW` localisations. [#24065](https://github.com/ant-design/ant-design/pull/24065) [@wx1322](https://github.com/wx1322)
+- 🐞 Fix Table `onChange` pagination type. [#24114](https://github.com/ant-design/ant-design/pull/24114) [@sorteam](https://github.com/sorteam)
+- 💄 Add less variable `@card-head-extra-color`. [#24189](https://github.com/ant-design/ant-design/pull/24189)
+- 💄 Adjust Pagination simple mode background to transparent. [#24152](https://github.com/ant-design/ant-design/pull/24152)
+- 💄 Fix dark Menu link color. [#24110](https://github.com/ant-design/ant-design/pull/24110)
+- RTL
+  - 💄 Fix Dropdown.Button default menu placement in RTL. [#24150](https://github.com/ant-design/ant-design/pull/24150)
+  - 💄 Fix Menu `border` in RTL. [#24101](https://github.com/ant-design/ant-design/pull/24101)
+  - 💄 Optimize Select multiple tag style in RTL. [#24112](https://github.com/ant-design/ant-design/pull/24112)
+  - 💄 Optimize Typography `expand` style in RTL. [#24084](https://github.com/ant-design/ant-design/pull/24084)
+  - 💄 Optimize Pagination slash style in RTL. [#24154](https://github.com/ant-design/ant-design/pull/24154)
+
+## 4.2.2
+
+`2020-05-11`
+
+- 🐞 Fix `npm run version` install error. [#24059](https://github.com/ant-design/ant-design/pull/24059)
+- 🐞 Fix Menu `@menu-item-font-size` not working. [#24052](https://github.com/ant-design/ant-design/pull/24052)
+- 💄 Add `@modal-close-color` less variable. [#24053](https://github.com/ant-design/ant-design/pull/24053)
+
+## 4.2.1
+
+`2020-05-11`
+
+- Form
+  - 🐞 Fix Form.Item get React warning for `getValueProps`. [#23875](https://github.com/ant-design/ant-design/pull/23875)
+  - 🐞 Fix Form.Item `help` style issue when `validateStatus` is not `error`. [#23945](https://github.com/ant-design/ant-design/pull/23945)
+- Table
+  - 🐞 Fix selection column width issue when fix header. [#23806](https://github.com/ant-design/ant-design/pull/23806)
+  - 💄 Adjust selection column css selector priority to enable customize width. [#23914](https://github.com/ant-design/ant-design/pull/23914)
+- DatePicker
+  - 🐞 Fix miss placeholder when `placeholder` is `undefined`. [#23818](https://github.com/ant-design/ant-design/pull/23818)
+  - 🐞 Fix clear icon color style. [#23811](https://github.com/ant-design/ant-design/pull/23811)
+- Switch
+  - 🐞 Fix loading style for the dark theme. [#23766](https://github.com/ant-design/ant-design/pull/23766) [@vsn4ik](https://github.com/vsn4ik)
+  - 🐞 Fix `unCheckedChildren` not showing. [#23791](https://github.com/ant-design/ant-design/pull/23791)
+- 🐞 Fix Upload error message location to scroll in the float layer. [#24001](https://github.com/ant-design/ant-design/pull/24001) [@mraiguo](https://github.com/mraiguo)
+- 💄 Tweak Comment render unnecessary div style when `avatar` is empty. [#23994](https://github.com/ant-design/ant-design/pull/23994) [@Xuhao](https://github.com/Xuhao)
+- 🐞 Fix Select `focus` border style in Input.Group. [#23985](https://github.com/ant-design/ant-design/pull/23985)
+- 🐞 Fix Steps `subTitle` showing `[object Object]` title. [#23989](https://github.com/ant-design/ant-design/pull/23989)
+- 💄 Tweak Select close icon position. [#23963](https://github.com/ant-design/ant-design/pull/23963)
+- 🐞 Fix Drawer `width="50%"` hidden problem when no mask. [#23925](https://github.com/ant-design/ant-design/pull/23925)
+- 🐞 Fix Textarea with `allowClear` has error height style. [#23835](https://github.com/ant-design/ant-design/pull/23835)
+- 💄 Adjust Modal.xxx function async to avoid block React events. [#23826](https://github.com/ant-design/ant-design/pull/23826)
+- 🐞 Fix Menu with controlled `openKeys` abnormal behavior when `inlineCollapsed` changed. [#23822](https://github.com/ant-design/ant-design/pull/23822)
+- 🐞 Fix Button `loading` animation. [#23783](https://github.com/ant-design/ant-design/pull/23783)
+- 🐞 Fix Slider `marks` selected problem when dragging. [#23773](https://github.com/ant-design/ant-design/pull/23773)
+- 🛠 Timeline refactors with React Hooks. [#23631](https://github.com/ant-design/ant-design/pull/23631) [@hengkx](https://github.com/hengkx)
+- 🌎 Localization
+  - 🇮🇷 Add Farsi `fa_IR` default locale template localisations. [#23926](https://github.com/ant-design/ant-design/pull/23926) [@NarimanMov](https://github.com/NarimanMov)
+  - 🇺🇸 Add default `en` default locale template localisations for Form. [#23859](https://github.com/ant-design/ant-design/pull/23859) [@mjfwebb](https://github.com/mjfwebb)
+- 📦 Reduce bundle size
+  - 🗑 Reduce bundle size via removing `react-lifecycles-compat`. [#23969](https://github.com/ant-design/ant-design/pull/23969)
+  - 🛠 Reduce bundle size via excluding `package.json` from source code. [#23957](https://github.com/ant-design/ant-design/pull/23957)
+  - 🛠 Upgrade `rc-animate` to 3.x to reduce bundle size. [#23937](https://github.com/ant-design/ant-design/pull/23937)
+- RTL
+  - 🐞 Fix Input clear icon style in RTL. [#23999](https://github.com/ant-design/ant-design/pull/23999)
+  - 🐞 Fix DatePicker panel style in RTL. [#24028](https://github.com/ant-design/ant-design/pull/24028) [@xrkffgg](https://github.com/xrkffgg)
+  - 💄 Optimize DatePicker active bar style in `RTL`. [#23981](https://github.com/ant-design/ant-design/pull/23981)
+  - 🐞 Fix Transfer search padding style in `RTL`. [#23962](https://github.com/ant-design/ant-design/pull/23962)
+  - 💄 Optimize Layout style of RTL. [#23921](https://github.com/ant-design/ant-design/pull/23921)
+  - 💄 Optimize Button `loading` style in RT. [#23776](https://github.com/ant-design/ant-design/pull/23776)
+  - 💄 Optimize Input.Search style in RTL. [#23797](https://github.com/ant-design/ant-design/pull/23797)
+- TypeScript
+  - 🐞 Fix InputNumber `onChange` type. [#23871](https://github.com/ant-design/ant-design/pull/23871) [@jjhbw](https://github.com/jjhbw)
+
 ## 4.2.0
 
 `2020-04-29`

@@ -194,7 +194,7 @@ Form 通过增量更新方式，只更新被修改的字段相关组件以达到
 | isFieldsTouched | 检查一组字段是否被用户操作过，`allTouched` 为 `true` 时检查是否所有字段都被操作过 | (nameList?: [NamePath](#NamePath)[], allTouched?: boolean) => boolean |
 | isFieldValidating | 检查一组字段是否正在校验 | (name: [NamePath](#NamePath)) => boolean |
 | resetFields | 重置一组字段到 `initialValues` | (fields?: [NamePath](#NamePath)[]) => void |
-| scrollToField | 滚动到对应字段位置 | (name: [NamePath](#NamePath), options: [[ScrollOptions](https://github.com/stipsan/scroll-into-view-if-needed/blob/ece40bd9143f48caf4b99503425ecb16b0ad8249/src/types.ts#L10)]) => void |
+| scrollToField | 滚动到对应字段位置 | (name: [NamePath](#NamePath), options: [[ScrollOptions](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options)]) => void |
 | setFields | 设置一组字段状态 | (fields: [FieldData](#FieldData)[]) => void |
 | setFieldsValue | 设置表单的值 | (values) => void |
 | submit | 提交表单，与点击 `submit` 按钮效果相同 | () => void |
@@ -248,7 +248,7 @@ validateFields()
 
 #### Rule
 
-Rule 支持接收 object 进行配置，也支持 function 来动态获取 from 的数据：
+Rule 支持接收 object 进行配置，也支持 function 来动态获取 form 的数据：
 
 ```tsx
 type Rule = RuleConfig | ((form: FormInstance) => RuleConfig);
