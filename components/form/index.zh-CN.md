@@ -4,6 +4,7 @@ subtitle: 表单
 type: 数据录入
 cols: 1
 title: Form
+cover: https://gw.alipayobjects.com/zos/antfincdn/YeW5m96xHG/Form.svg
 ---
 
 高性能表单控件，自带数据域管理。包含数据录入、校验以及对应样式。
@@ -17,26 +18,27 @@ title: Form
 
 ### Form
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| component | 设置 Form 渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType \| false | form |
-| colon | 配置 Form.Item 的 `colon` 的默认值。表示是否显示 label 后面的冒号 (只有在属性 layout 为 horizontal 时有效) | boolean | true |
-| fields | 通过状态管理（如 redux）控制表单字段，如非强需求不推荐使用。查看[示例](#components-form-demo-global-state) | [FieldData](#FieldData)\[] | - |
-| form | 经 `Form.useForm()` 创建的 form 控制实例，不提供时会自动创建 | [FormInstance](#FormInstance) | - |
-| hideRequiredMark | 隐藏所有表单项的必选标记 | boolean | false |
-| initialValues | 表单默认值，只有初始化以及重置时生效 | object | - |
-| labelAlign | label 标签的文本对齐方式 | `left` \| `right` | `right` |
-| labelCol | label 标签布局，同 `<Col>` 组件，设置 `span` `offset` 值，如 `{span: 3, offset: 12}` 或 `sm: {span: 3, offset: 12}` | [object](/components/grid/#Col) | - |
-| layout | 表单布局 | `horizontal` \| `vertical` \| `inline` | `horizontal` |
-| name | 表单名称，会作为表单字段 `id` 前缀使用 | string | - |
-| scrollToFirstError | 提交失败自动滚动到第一个错误字段 | false | - |
-| size | 设置字段组件的尺寸（仅限 antd 组件） | `small` \| `middle` \| `large` | - |
-| validateMessages | 验证提示模板，说明[见下](#validateMessages) | [ValidateMessages](https://github.com/react-component/field-form/blob/master/src/utils/messages.ts) | - |
-| wrapperCol | 需要为输入控件设置布局样式时，使用该属性，用法同 labelCol | [object](/components/grid/#Col) | - |
-| onFinish | 提交表单且数据验证成功后回调事件 | Function(values) | - |
-| onFinishFailed | 提交表单且数据验证失败后回调事件 | Function({ values, errorFields, outOfDate }) | - |
-| onFieldsChange | 字段更新时触发回调事件 | Function(changedFields, allFields) | - |
-| onValuesChange | 字段值更新时触发回调事件 | Function(changedValues, allValues) | - |
+| 参数 | 说明 | 类型 | 默认值 | 版本 |
+| --- | --- | --- | --- | --- |
+| component | 设置 Form 渲染元素，为 `false` 则不创建 DOM 节点 | ComponentType \| false | form |  |
+| colon | 配置 Form.Item 的 `colon` 的默认值。表示是否显示 label 后面的冒号 (只有在属性 layout 为 horizontal 时有效) | boolean | true |  |
+| fields | 通过状态管理（如 redux）控制表单字段，如非强需求不推荐使用。查看[示例](#components-form-demo-global-state) | [FieldData](#FieldData)\[] | - |  |
+| form | 经 `Form.useForm()` 创建的 form 控制实例，不提供时会自动创建 | [FormInstance](#FormInstance) | - |  |
+| hideRequiredMark | 隐藏所有表单项的必选标记 | boolean | false |  |
+| initialValues | 表单默认值，只有初始化以及重置时生效 | object | - |  |
+| labelAlign | label 标签的文本对齐方式 | `left` \| `right` | `right` |  |
+| labelCol | label 标签布局，同 `<Col>` 组件，设置 `span` `offset` 值，如 `{span: 3, offset: 12}` 或 `sm: {span: 3, offset: 12}` | [object](/components/grid/#Col) | - |  |
+| layout | 表单布局 | `horizontal` \| `vertical` \| `inline` | `horizontal` |  |
+| name | 表单名称，会作为表单字段 `id` 前缀使用 | string | - |  |
+| scrollToFirstError | 提交失败自动滚动到第一个错误字段 | false | - |  |
+| size | 设置字段组件的尺寸（仅限 antd 组件） | `small` \| `middle` \| `large` | - |  |
+| validateMessages | 验证提示模板，说明[见下](#validateMessages) | [ValidateMessages](https://github.com/react-component/field-form/blob/master/src/utils/messages.ts) | - |  |
+| validateTrigger | 统一设置字段校验规则 | string \| string[] | 'onChange' | 4.3.0 |
+| wrapperCol | 需要为输入控件设置布局样式时，使用该属性，用法同 labelCol | [object](/components/grid/#Col) | - |  |
+| onFinish | 提交表单且数据验证成功后回调事件 | Function(values) | - |  |
+| onFinishFailed | 提交表单且数据验证失败后回调事件 | Function({ values, errorFields, outOfDate }) | - |  |
+| onFieldsChange | 字段更新时触发回调事件 | Function(changedFields, allFields) | - |  |
+| onValuesChange | 字段值更新时触发回调事件 | Function(changedValues, allValues) | - |  |
 
 ### validateMessages
 
@@ -258,9 +260,9 @@ type Rule = RuleConfig | ((form: FormInstance) => RuleConfig);
 | --- | --- | --- |
 | enum | 是否匹配枚举中的值 | any[] |
 | len | string 类型时为字符串长度；number 类型时为确定数字； array 类型时为数组长度 | number |
-| max | string 类型为字符串最大长度；number 类型时为最大值；array 类型时为数组最大长度 | number |
+| max | 必须设置 `type`：string 类型为字符串最大长度；number 类型时为最大值；array 类型时为数组最大长度 | number |
 | message | 错误信息，不设置时会通过[模板](#validateMessages)自动生成 | string |
-| min | string 类型为字符串最小长度；number 类型时为最小值；array 类型时为数组最小长度 | number |
+| min | 必须设置 `type`：string 类型为字符串最小长度；number 类型时为最小值；array 类型时为数组最小长度 | number |
 | pattern | 正则表达式匹配 | RegExp |
 | required | 是否为必选字段 | boolean |
 | transform | 将字段值转换成目标值后进行校验 | (value) => any |

@@ -2,6 +2,7 @@
 category: Components
 type: Data Entry
 title: Rate
+cover: https://gw.alipayobjects.com/zos/alicdn/V-ycROUpN/Rate.svg
 ---
 
 Rate component.
@@ -18,7 +19,7 @@ Rate component.
 | allowClear | whether to allow clear when click again | boolean | true |
 | allowHalf | whether to allow semi selection | boolean | false |
 | autoFocus | get focus when component mounted | boolean | false |
-| character | custom character of rate | ReactNode | [<StarFilled /\>](/components/icon/) |
+| character | custom character of rate | ReactNode | [`<StarFilled />`](/components/icon/) |
 | className | custom class name of rate | string |  |
 | count | star count | number | 5 |
 | defaultValue | default value | number | 0 |

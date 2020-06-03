@@ -4,6 +4,7 @@ type: 反馈
 noinstant: true
 title: Notification
 subtitle: 通知提醒框
+cover: https://gw.alipayobjects.com/zos/alicdn/KiuspIW60/Notification.svg
 ---
 
 全局展示通知提醒信息。
@@ -50,6 +51,10 @@ config 参数如下：
 还提供了一个全局配置方法，在调用前提前配置，全局一次生效。
 
 - `notification.config(options)`
+
+  > 当你使用 `ConfigProvider` 进行全局化配置时，系统会默认自动开启 RTL 模式。(4.3.0+)
+  >
+  > 当你想单独使用，可通过如下设置开启 RTL 模式。
 
 ```js
 notification.config({

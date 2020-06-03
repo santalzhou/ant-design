@@ -2,6 +2,7 @@
 category: Components
 type: Data Entry
 title: DatePicker
+cover: https://gw.alipayobjects.com/zos/alicdn/Xr6CsbN_a/DatePicker.svg
 ---
 
 To select or input a date.
@@ -144,6 +145,7 @@ Added in `4.1.0`.
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
 | allowEmpty | Allow start or end input leave empty | \[boolean, boolean] | \[false, false] |  |
+| dateRender | Customize date cell. `info` argument is added in 4.3.0 | function(currentDate: moment, today: moment, info: { range: 'start' \| ''end }) => React.ReactNode | - |  |
 | defaultValue | to set default date | \[[moment](http://momentjs.com/), [moment](http://momentjs.com/)] | - |  |
 | defaultPickerValue | to set default picker date | \[[moment](http://momentjs.com/), [moment](http://momentjs.com/)\] | - |  |
 | disabled | disable start or end | `[boolean, boolean]` | - |  |
@@ -171,4 +173,16 @@ Added in `4.1.0`.
 
 - [When set mode to DatePicker/RangePicker, cannot select year or month anymore?](/docs/react/faq#When-set-mode-to-DatePicker/RangePicker,-cannot-select-year-or-month-anymore?)
 
-- [How to use DatePicker with customize date library like dayjs](/docs/react/replace-moment#DatePicker)
+- [How to use DatePicker with customize date library like dayjs?](/docs/react/replace-moment#DatePicker)
+
+- How to modify start day of week?
+
+  Please use correct [language](/docs/react/i18n) ([#5605](https://github.com/ant-design/ant-design/issues/5605)), or update moment `locale` config: https://codesandbox.io/s/moment-day-of-week-b24k5
+
+  ```js
+  moment.locale('en', {
+    week: {
+      dow: 1,
+    },
+  });
+  ```

@@ -81,6 +81,8 @@ class Select<ValueType extends SelectValue = SelectValue> extends React.Componen
     getPrefixCls,
     renderEmpty,
     direction,
+    virtual,
+    dropdownMatchSelectWidth,
   }: ConfigConsumerProps) => {
     const {
       prefixCls: customizePrefixCls,
@@ -88,7 +90,7 @@ class Select<ValueType extends SelectValue = SelectValue> extends React.Componen
       className,
       size: customizeSize,
       listHeight = 256,
-      listItemHeight = 32,
+      listItemHeight = 24,
       getPopupContainer,
       dropdownClassName,
       bordered,
@@ -142,6 +144,8 @@ class Select<ValueType extends SelectValue = SelectValue> extends React.Componen
           return (
             <RcSelect<ValueType>
               ref={this.selectRef}
+              virtual={virtual}
+              dropdownMatchSelectWidth={dropdownMatchSelectWidth}
               {...selectProps}
               listHeight={listHeight}
               listItemHeight={listItemHeight}

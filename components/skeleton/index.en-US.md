@@ -3,6 +3,7 @@ category: Components
 type: Feedback
 title: Skeleton
 cols: 1
+cover: https://gw.alipayobjects.com/zos/alicdn/KpcciCJgv/Skeleton.svg
 ---
 
 Provide a placeholder while you wait for content to load, or to visualise content that doesn't exist yet.
@@ -25,6 +26,7 @@ Provide a placeholder while you wait for content to load, or to visualise conten
 | loading | Display the skeleton when `true` | boolean | - |
 | paragraph | Show paragraph placeholder | boolean \| [SkeletonParagraphProps](#SkeletonParagraphProps) | true |
 | title | Show title placeholder | boolean \| [SkeletonTitleProps](#SkeletonTitleProps) | true |
+| round | Show paragraph and title radius when `true` | boolean | false |
 
 ### SkeletonAvatarProps
 
